@@ -1,7 +1,13 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { MongoClient } from "mongodb";
 
-export default function Home() {
+
+export default async function Home() {
+
+  
+  const db = client.db("forum")
+  db.collection();
+
+
   return (
     <div>안녕</div>
   );
