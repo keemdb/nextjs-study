@@ -12,7 +12,3 @@ if (process.env.NODE_ENV === 'development') {
   connectDB = new MongoClient(url, options).connect()
 }
 export { connectDB }
-
-const client = await MongoClient.connect('mongodb+srv://admin:test1234@boilerplate.v3hxs.mongodb.net/', { useNewUrlParser: true })
-
-export {connect}
