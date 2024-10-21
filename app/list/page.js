@@ -1,6 +1,7 @@
 import { ObjectId } from "mongodb";
 import { connectDB } from "@/util/database";
 import Link from "next/link";
+import DetailLink from "./DetailLink";
 
 export default async function List(props) {
 
@@ -11,6 +12,7 @@ export default async function List(props) {
 		return (
 			<div className="list-item" key={idx}>
 				<h4><Link href={`detail/${item._id}`}>{item.title}</Link></h4>
+				<DetailLink/>
 				<p>{item.content}</p>
 			</div>
 		)
